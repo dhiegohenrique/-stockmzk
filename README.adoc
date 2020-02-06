@@ -1,0 +1,17 @@
+= Stockmzk
+
+### Requisitos:
+```
+java: no mínimo v11
+```
+
+### Para rodar os testes:
+```
+mvnw clean package
+```
+
+### Para rodar a aplicação:
+```
+mvnw clean compile exec:java
+```
+
