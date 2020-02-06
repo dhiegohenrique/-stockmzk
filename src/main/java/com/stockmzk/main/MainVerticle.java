@@ -43,14 +43,7 @@ public class MainVerticle extends AbstractVerticle {
 			jsonObject = new JsonObject(this.vertx.fileSystem().readFileBlocking(path));
 		}
 		
-//		path = "D:\\Usuarios\\Dhiego\\Documents\\Mozaiko\\stockmzk\\src\\main\\resources\\conf\\config.json";
 		return jsonObject;
-//		JsonObject jsonConfig = new JsonObject();
-//		jsonConfig.put("http.port", this.port);
-//		jsonConfig.put("url", "jdbc:hsqldb:mem:stockmzk?shutdown=true");
-//		jsonConfig.put("driver_class", "org.hsqldb.jdbcDriver");
-//		jsonConfig.put("max_pool_size", 30);
-//		return jsonConfig;
 	}
 
 	private void checkDatabaseConnection(Handler<AsyncResult<SQLConnection>> next, Promise<Void> fut) {
