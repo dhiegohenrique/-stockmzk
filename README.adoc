@@ -7,7 +7,7 @@ java: no mínimo v11
 
 ### Para rodar os testes:
 ```
-mvnw clean package
+mvnw clean test
 ```
 
 ### Para rodar a aplicação:
