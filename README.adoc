@@ -15,3 +15,24 @@ mvnw clean test
 mvnw clean compile exec:java
 ```
 
+### Exemplos de requests:
+
+Para adicionar um produto:
+```
+curl --location --request POST "http://localhost:8080/api/products" --header "Content-Type: application/json; charset=utf-8" --data-raw "{\"name\":\"Product1\", \"barCode\":\"7898392930332\", \"serialNumber\": \"1\"}"
+```
+
+Para recuparar todos os produtos:
+```
+curl --location --request GET "http://localhost:8080/api/products" --header "Content-Type: application/json; charset=utf-8"
+```
+
+Para dar baixa em um produto:
+```
+curl --location --request PUT "http://localhost:8080/api/products/1"
+```
+
+Para recuperar os produtos disponíveis:
+```
+curl --location --request GET "http://localhost:8080/api/products/available" --header "Content-Type: application/json; charset=utf-8"
+```
